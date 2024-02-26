@@ -1,0 +1,61 @@
+body{
+    background-color: hsl(0,0%,98%);
+    font-size: 1rem;
+    color: hsl(229,6%,66%);
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+}
+.container{
+    margin: 4rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.header,.section{
+    max-width: 300px;
+    line-height: 1.5;
+}
+.section{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    background-color: white;
+    margin-bottom: 1.8rem;
+    padding: 1rem;
+    border-radius: .6rem;
+}
+.section>h2, .header div{
+    font-size: 2rem;
+    color:  hsl(234, 12%, 34%);
+    font-weight: 800;
+}
+.header p{
+    text-align: center;
+}
+.header div{
+    font-size: 1.4rem;
+}
+.header h1{
+    font-size: 1.3rem;
+    font-size: 200;
+}
+.supervisor{
+    border-top: 4px solid  hsl(180, 62%, 55%);
+    margin-top: 5rem;
+}
+.team{
+    border-top: 4px solid  hsl(0, 78%, 62%);
+}
+.karma{
+    border-top: 4px solid hsl(34, 97%, 64%);
+}
+.calculator{
+    border-top: 4px solid hsl(212, 86%, 64%);
+}
+.iconWrapper{
+    align-self: flex-end;
+}
+.iconWrapper img{
+    width: 50px;
+}
