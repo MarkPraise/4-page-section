@@ -11,6 +11,7 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 2rem;
 }
 .header,.section{
     max-width: 300px;
@@ -58,4 +59,57 @@ body{
 }
 .iconWrapper img{
     width: 50px;
+}
+.four-card-Wrapper{
+    margin-top: 1.5rem;
+}
+@media (min-width:375px){
+    .four-card-Wrapper{
+        display :grid;
+        grid-template: repeat(2,1fr)/repeat(2,1fr);
+        grid-template-areas: "t s"
+                             "k c";
+                             gap: 1rem;
+    }
+    .team{
+        grid-area: t;
+        margin-bottom: 0;
+    }
+    .calculator{
+        grid-area: c;
+    }
+    .supervisor{
+        grid-area: s;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    .karma{
+        grid-area: k;
+    }
+}
+
+@media(min-width:1000px){
+ 
+    .four-card-Wrapper{
+        display: grid;
+        grid-template: repeat(4,1fr)/repeat(3,1fr);
+        grid-template-areas:". t ."
+                            "s t c"
+                            "s k c"
+                            ". k ." ;
+                            justify-content: center;
+                            align-content: center;
+    }
+    .supervisor{
+        grid-area: s;
+    }
+    .team{
+        grid-area: t;
+    }
+    .calculator{
+        grid-area: c;
+    }
+    .karma{
+        grid-area: k;
+    }
 }
