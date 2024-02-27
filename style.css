@@ -63,7 +63,7 @@ body{
 .four-card-Wrapper{
     margin-top: 1.5rem;
 }
-@media (min-width:375px){
+@media (min-width:28rem){
     .four-card-Wrapper{
         display :grid;
         grid-template: repeat(2,1fr)/repeat(2,1fr);
@@ -86,7 +86,7 @@ body{
     .karma{
         grid-area: k;
     }
-}
+} 
 
 @media(min-width:1000px){
  
@@ -99,9 +99,12 @@ body{
                             ". k ." ;
                             justify-content: center;
                             align-content: center;
+                            gap: 1rem;
     }
     .supervisor{
         grid-area: s;
+        margin-top: 0;
+        margin-bottom: 0;
     }
     .team{
         grid-area: t;
